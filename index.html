@@ -1,0 +1,175 @@
+<html>
+<head>   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width =device-width , initial-scale=1">
+        <title>MY PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/56905bf518.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+       
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <img src="logo.png" class="logo">
+                <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hello I'm,<span> Diana</span> <br>from Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="picture.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am an enthusiastic person eager to contribute to the team success through hard work , attention to detail and excellent organizational skills. Clear understanding of given task and training. Motivated to learn, grow and excel in this industry. 
+            </p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>Javascript</span></li>
+                <li><span>Php</span></li>
+                <li><span>React</span></li>
+                </ul>
+            </div>
+             <div class="tab-contents" id="experience">
+                <ul>
+                <li><span>2022</span><br>Internship as Front-End Web Developer</li>
+                <li><span>Icargo Facific</span></li>
+                </ul>
+            </div>
+             <div class="tab-contents" id="education">
+                <ul>
+                <li>Bachelor Of Science in  Computer Engineering</li>
+                <li><span>Bulacan State University</span></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Grab Now</p>
+            <a href="#">Learn More</a>
+            </div>
+              <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Grab Now</p>
+            <a href="#">Learn More</a>
+            </div>
+              <div>
+            <i class="fa-regular fa-font-awesome"></i>
+            <h2>Logo Design</h2>
+            <p>Grab Now</p>
+            <a href="#">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="web.png">
+            <div class="layer">
+                <h3>Web Design</h3>
+                <p>Try Now</p>
+                <a href="#"><i class="fa-regular fa-font-awesome"></i></a>
+            </div>
+            </div>
+        <div class="work">
+            <img src="web.png">
+             <div class="layer">
+                <h3>UI/UX</h3>
+                <p>Try Now</p>
+                <a href="#"> <i class="fa-regular fa-font-awesome"></i></a>
+            </div>
+            </div>
+            <div class="work">
+            <img src="web.png">
+                 <div class="layer">
+                <h3>LOGO</h3>
+                <p>Try Now</p>
+                <a href="#"> <i class="fa-regular fa-font-awesome"></i></a>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
